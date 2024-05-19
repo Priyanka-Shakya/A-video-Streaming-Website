@@ -1,0 +1,32 @@
+.blogs{
+    position: relative;
+    overflow: hidden;
+    padding: 120px 100px 120px;
+    width: 100%;
+    transition: ease-in-out 1s;
+    transform-origin: bottom;
+    z-index: 1100;
+}
+
+
+.blogs .section-title{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+.blogs .section-title::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -30px;
+    height: 5px;
+    width: 50%;
+    background: linear-gradient(90deg, var(--primary), var(--primary), transparent);
+    z-index: 1000;
+}
